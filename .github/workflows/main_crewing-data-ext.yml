@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Making dir
-        run: |
-          mkdir app
+
       - name: Create and start virtual environment
         run: |
           python -m venv venv
@@ -22,17 +20,15 @@ jobs:
         run: |
           pip install -r requirements.txt \
             --target=".python_packages/lib/site-packages"
-        working-directory: ./app
       
       - name: Compress files
         run: zip -r release.zip .
-        working-directory: ./app
-      
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: python-app
-          path: app/release.zip
+          path: release.zip
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
