@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Making dir
+        run: |
+          mkdir app
       - name: Create and start virtual environment
         run: |
           python -m venv venv
