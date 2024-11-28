@@ -1,4 +1,8 @@
-name: Build and Deploy Python App to Azure Web App - crewing-data-ext
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+# More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
+
+name: Build and deploy Python app to Azure Web App - crewing-data-ext
 
 on:
   push:
@@ -26,15 +30,18 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
         
+      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
+
       - name: Zip artifact for deployment
-        run: |
-          zip release.zip ./* -r -x ".*" -x "venv/*" -x "*.git/*" -x "*.pyc"
+        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v4
         with:
           name: python-app
-          path: release.zip
+          path: |
+            release.zip
+            !venv/
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,6 +58,7 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
+
       
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -58,11 +66,4 @@ jobs:
         with:
           app-name: 'crewing-data-ext'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C77EA957B6DC4F6F8428C60C48250EDA }}
-
-      - name: Set Uvicorn Startup Command
-        run: |
-          az webapp config set \
-          --name crewing-data-ext \
-          --resource-group <RESOURCE_GROUP_NAME> \
-          --startup-file "uvicorn main:app --host 0.0.0.0 --port 8000"
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_39F604975B334051B9B1032DBFD280BE }}
