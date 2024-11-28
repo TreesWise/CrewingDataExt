@@ -10,22 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Checkout GitHub Action'
-        uses: actions/checkout@v4
-
-      - name: Set up Python version
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'  # Specify the Python version
-
+      - name: Create and start virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+      
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Zip artifact for deployment
-        run: |
-          zip -r release.zip . -x '*.git*' 
+          pip install -r requirements.txt \
+            --target=".python_packages/lib/site-packages"
+        working-directory: ./app
+      
+      - name: Compress files
+        run: zip -r release.zip .
+        working-directory: ./app
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-app
+          path: app/release.zip
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
