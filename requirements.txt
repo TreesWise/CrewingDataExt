@@ -1,3 +1,9 @@
+gunicorn
+fastapi[all]
+fastapi[uvicorn]
+uvicorn[standard]
+
+
 absl-py==2.1.0
 aiohappyeyeballs==2.4.0
 aiohttp==3.10.5
@@ -279,10 +285,3 @@ yarl==1.11.1
 zipp==3.20.2
 zope.interface==6.3
 fitz==0.0.1.dev2
-
-
-
-gunicorn
-fastapi[all]
-fastapi[uvicorn]
-uvicorn[standard]
