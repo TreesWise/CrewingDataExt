@@ -28,11 +28,14 @@ cachetools==5.3.2
 certifi==2024.2.2
 cffi==1.15.1
 charset-normalizer==3.3.2
+ci-info==0.3.0
 click==8.1.3
 cmdstanpy==0.9.5
 colorama==0.4.6
 comm==0.2.2
 config==0.5.1
+configobj==5.0.9
+configparser==7.1.0
 contourpy==1.0.5
 convertdate==2.4.0
 cramjam==2.8.3
@@ -52,6 +55,7 @@ email_validator==2.1.1
 ensure==1.0.2
 ephem==4.1.5
 et-xmlfile==1.1.0
+etelemetry==0.3.1
 exceptiongroup==1.1.1
 executing==2.0.1
 fastapi==0.114.2
@@ -59,6 +63,7 @@ fastjsonschema==2.20.0
 fastparquet==2024.2.0
 filelock==3.13.4
 filetype==1.2.0
+fitz==0.0.1.dev2
 flatbuffers==23.5.26
 fonttools==4.48.1
 fpdf==1.7.2
@@ -81,6 +86,7 @@ h5py==3.10.0
 helper==2.5.0
 holidays==0.42
 httpcore==1.0.5
+httplib2==0.22.0
 httptools==0.5.0
 httpx==0.27.0
 huggingface-hub==0.24.6
@@ -88,6 +94,7 @@ idna==3.4
 imbalanced-learn==0.12.2
 imblearn==0.0
 importlib_metadata==8.5.0
+importlib_resources==6.4.5
 intel-cmplr-lib-ur==2024.2.1
 intel-openmp==2024.2.1
 ipykernel==6.29.4
@@ -120,7 +127,9 @@ keras==2.11.0
 kiwisolver==1.4.5
 Levenshtein==0.21.1
 libclang==16.0.6
+looseversion==1.3.0
 LunarCalendar==0.0.9
+lxml==5.3.0
 Markdown==3.5.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
@@ -140,6 +149,8 @@ nbconvert==7.16.4
 nbformat==5.10.4
 nest-asyncio==1.6.0
 networkx==3.3
+nibabel==5.3.2
+nipype==1.9.0
 nltk==3.9.1
 notebook==7.2.2
 notebook_shim==0.2.4
@@ -164,8 +175,10 @@ platformdirs==4.2.0
 prometheus_client==0.20.0
 prompt-toolkit==3.0.43
 protobuf==3.19.6
+prov==2.0.1
 psutil==5.9.8
 pure-eval==0.2.2
+puremagic==1.28
 py-youtube==1.1.7
 pyarrow==17.0.0
 pyasn1==0.5.0
@@ -175,10 +188,11 @@ pydantic==2.9.1
 pydantic-settings==2.4.0
 pydantic_core==2.23.3
 pydeck==0.9.1
+pydot==3.0.2
 Pygments==2.17.2
 PyMeeus==0.5.12
 Pympler==1.1
-PyMuPDF==1.24.10
+PyMuPDF==1.24.13
 PyMuPDFb==1.24.10
 pyodbc==4.0.39
 pyparsing==3.1.1
@@ -193,12 +207,13 @@ python-json-logger==2.0.7
 python-Levenshtein==0.21.1
 python-multipart==0.0.6
 pytz==2023.3
-#pywin32
-#pywin32==306
-#pywinpty==2.0.13
+pywin32==306
+pywinpty==2.0.13
+pyxnat==1.6.2
 PyYAML==6.0
 pyzmq==25.1.2
 rapidfuzz==3.8.1
+rdflib==6.3.2
 referencing==0.35.1
 regex==2024.4.16
 requests==2.31.0
@@ -215,6 +230,7 @@ selenium==4.15.2
 semver==3.0.2
 Send2Trash==1.8.3
 setuptools-git==1.2
+simplejson==3.19.3
 six==1.16.0
 smmap==5.0.1
 sniffio==1.3.0
@@ -234,8 +250,7 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.11.0
 tensorflow-estimator==2.11.0
-tensorflow-intel
-#tensorflow-intel==2.11.0
+tensorflow-intel==2.11.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 terminado==0.18.1
@@ -250,6 +265,7 @@ torch==2.4.0
 tornado==6.4
 tqdm==4.66.1
 traitlets==5.14.2
+traits==6.4.3
 transformers==4.44.2
 trio==0.25.0
 trio-websocket==0.11.1
@@ -278,5 +294,3 @@ wsproto==1.2.0
 yarl==1.11.1
 zipp==3.20.2
 zope.interface==6.3
-fitz==0.0.1.dev2
-hypercorn
