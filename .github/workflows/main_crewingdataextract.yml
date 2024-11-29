@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'CrewingDataExtract'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E3D8C1DC90864FEE903AEB898668AF4D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_940ABB5F9E99454EAA426CB15932AD54 }}

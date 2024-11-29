@@ -216,8 +216,8 @@ python-json-logger==2.0.7
 python-Levenshtein==0.21.1
 python-multipart==0.0.6
 pytz==2023.3
-pywin32==306
-pywinpty==2.0.13
+#pywin32==306
+#pywinpty==2.0.13
 pyxnat==1.6.2
 PyYAML==6.0
 pyzmq==25.1.2
@@ -260,7 +260,7 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow==2.11.0
 tensorflow-estimator==2.11.0
-tensorflow-intel==2.11.0
+#tensorflow-intel==2.11.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 terminado==0.18.1
