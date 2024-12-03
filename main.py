@@ -1,3 +1,8 @@
+import sys
+if sys.version_info >= (3, 10):
+    import collections
+    collections.Sequence = collections.abc.Sequence
+
 import pickle
 from fastapi import FastAPI, File, UploadFile, BackgroundTasks, HTTPException, status, Depends
 from datetime import datetime, timedelta
@@ -21,11 +26,6 @@ from azure.storage.blob import BlobServiceClient
 from dotenv import load_dotenv
 import logging
 import os
-import collections
-import sys
-
-if sys.version_info >= (3, 10):
-    collections.Sequence = collections.abc.Sequence
 
 load_dotenv(dotenv_path=".env") 
 
