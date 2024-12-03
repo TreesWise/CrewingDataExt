@@ -21,6 +21,11 @@ from azure.storage.blob import BlobServiceClient
 from dotenv import load_dotenv
 import logging
 import os
+import collections
+import sys
+
+if sys.version_info >= (3, 10):
+    collections.Sequence = collections.abc.Sequence
 
 load_dotenv(dotenv_path=".env") 
 
