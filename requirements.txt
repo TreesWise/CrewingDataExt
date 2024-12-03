@@ -1,3 +1,4 @@
+tensorflow
 absl-py==2.1.0
 aiohappyeyeballs==2.4.0
 aiohttp==3.10.5
@@ -256,8 +257,7 @@ tenacity==8.5.0
 tensorboard==2.11.2
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow-intel
-tensorflow
+
 tensorflow-estimator==2.11.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
