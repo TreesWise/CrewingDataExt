@@ -1,3 +1,8 @@
+import collections
+if not hasattr(collections, "Sequence"):
+    from collections.abc import Sequence
+    collections.Sequence = Sequence
+
 import pickle
 from fastapi import FastAPI, File, UploadFile, BackgroundTasks, HTTPException, status, Depends
 from datetime import datetime, timedelta
