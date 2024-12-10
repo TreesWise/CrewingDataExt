@@ -162,7 +162,7 @@ python-dotenv==1.0.1
 python-jose==3.3.0
 python-multipart==0.0.19
 pytils==0.4.1
-pytz==2024.2
+pytz==2024.3
 python-json-logger==2.0.7
 python-Levenshtein==0.21.1
 python-multipart==0.0.19
