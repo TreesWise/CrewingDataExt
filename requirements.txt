@@ -41,14 +41,12 @@ fastapi_cors==0.0.6
 filelock==3.16.1
 filetype==1.2.0
 fitz==0.0.1.dev2
-<<<<<<< HEAD
 flatbuffers==24.3.25
 frontend==0.0.3
 frozenlist==1.5.0
 fsspec==2024.10.0
 ftfy==6.3.1
 greenlet==3.1.1
-=======
 flatbuffers==23.5.26
 fonttools==4.48.1
 fpdf==1.7.2
@@ -66,7 +64,6 @@ google-pasta==0.2.0
 greenlet==2.0.2
 grpcio==1.60.1
 gunicorn==22.0.0
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 h11==0.14.0
 httpcore==1.0.7
 httplib2==0.22.0
@@ -77,12 +74,10 @@ idna==3.10
 importlib_resources==6.4.5
 isodate==0.6.1
 itsdangerous==2.2.0
-<<<<<<< HEAD
 Jinja2==3.1.4
 jiter==0.8.2
 linecache2==1.0.0
 logging==0.4.9.6
-=======
 jedi==0.19.1
 Jinja2==3.1.3
 jiter==0.5.0
@@ -107,13 +102,10 @@ keras==2.11.0
 kiwisolver==1.4.5
 Levenshtein==0.21.1
 libclang==16.0.6
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 looseversion==1.3.0
 lxml==5.3.0
-<<<<<<< HEAD
 MarkupSafe==3.0.2
 marshmallow==3.23.1
-=======
 Markdown==3.5.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
@@ -124,7 +116,6 @@ memory-profiler==0.61.0
 mistune==3.0.2
 mkl==2024.2.2
 ml-dtypes==0.2.0
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 mpmath==1.3.0
 multidict==6.1.0
 natsort==8.4.0
@@ -140,20 +131,17 @@ packaging==24.2
 pandas==2.2.3
 passlib==1.7.4
 pathlib==1.0.1
-<<<<<<< HEAD
 pdftext==0.3.20
 pillow==10.4.0
 platformdirs==4.3.6
 propcache==0.2.1
 protobuf==5.29.1
-=======
 pillow==10.2.0
 pip-tools==7.4.1
 platformdirs==4.2.0
 prometheus_client==0.20.0
 prompt-toolkit==3.0.43
 protobuf==3.19.6
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 prov==2.0.1
 puremagic==1.28
 py-youtube==1.1.7
@@ -172,18 +160,15 @@ pyreadline3==3.5.4
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-jose==3.3.0
-<<<<<<< HEAD
 python-multipart==0.0.19
 pytils==0.4.1
 pytz==2024.2
-=======
 python-json-logger==2.0.7
 python-Levenshtein==0.21.1
 python-multipart==0.0.6
 pytz==2023.3
 #pywin32==306
 #pywinpty==2.0.13
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 pyxnat==1.6.2
 PyYAML==6.0.2
 rdflib==6.3.2
@@ -200,13 +185,11 @@ starlette==0.41.3
 surya-ocr==0.7.0
 sympy==1.13.1
 tabulate==0.9.0
-<<<<<<< HEAD
 tokenizers==0.21.0
 tools==0.1.9
 torch==2.5.1
 tqdm==4.67.1
 traceback2==1.4.0
-=======
 tbb==2021.13.1
 tenacity==8.5.0
 tensorboard==2.11.2
@@ -229,16 +212,13 @@ torch==2.3.0
 tornado==6.4
 tqdm==4.66.1
 traitlets==5.14.2
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 traits==6.4.3
 transformers==4.47.0
 typing==3.7.4.3
 typing_extensions==4.12.2
-<<<<<<< HEAD
 tzdata==2024.2
 urllib3==2.2.3
 uvicorn==0.32.1
-=======
 tzdata==2023.3
 tzlocal==5.2
 ujson==5.9.0
@@ -249,6 +229,5 @@ uvicorn==0.22.0
 validators==0.34.0
 watchdog==4.0.2
 watchfiles==0.19.0
->>>>>>> 36d9e0064a42da3fdbd188af192487405724cd63
 wcwidth==0.2.13
 yarl==1.18.3
