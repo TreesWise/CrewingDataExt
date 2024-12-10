@@ -39,21 +39,6 @@ AZURE_CONNECTION_STRING = os.getenv("AZURE_CONNECTION_STRING")  # Fetch the conn
 AZURE_CONTAINER_NAME = os.getenv("AZURE_CONTAINER_NAME")
 
 
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# if not AZURE_CONNECTION_STRING:
-#     raise ValueError("AZURE_CONNECTION_STRING is not set or is empty. Check your .env file.")
-
-# if not ACCESS_TOKEN_EXPIRE_MINUTES:
-#     raise ValueError("ACCESS_TOKEN_EXPIRE_MINUTES is not set or is empty. Check your .env file.")
-
-# if not AZURE_CONTAINER_NAME:
-#     raise ValueError("AZURE_CONTAINER_NAME is not set or is empty. Check your .env file.")
-
-# Debug prints (remove or comment out in production)
-# print(f"ACCESS_TOKEN_EXPIRE_MINUTES: {ACCESS_TOKEN_EXPIRE_MINUTES}")
-# print(f"AZURE_CONNECTION_STRING: {AZURE_CONNECTION_STRING[:10]}...")  # Partial for validation
-# print(f"AZURE_CONTAINER_NAME: {AZURE_CONTAINER_NAME}")
-
 
 try:
     # Configure logging
