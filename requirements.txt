@@ -52,7 +52,7 @@ fonttools==4.48.1
 fpdf==1.7.2
 fpdf2==2.7.9
 fqdn==1.5.1
-frozenlist==1.4.1
+frozenlist==1.5.0
 fsspec==2024.3.1
 ftfy==6.2.3
 gast==0.4.0
