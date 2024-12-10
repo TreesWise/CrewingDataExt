@@ -165,7 +165,7 @@ pytils==0.4.1
 pytz==2024.2
 python-json-logger==2.0.7
 python-Levenshtein==0.21.1
-python-multipart==0.0.6
+python-multipart==0.0.19
 pytz==2023.3
 #pywin32==306
 #pywinpty==2.0.13
